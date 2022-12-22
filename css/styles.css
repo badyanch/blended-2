@@ -1,9 +1,23 @@
 :root {
-    --brand-color: #28A745;
-    --white-color: #FFFFFF;
-    --secondary-color: #e9e9e9;
-    --text-color: #333333;
-    --form-color: #808080;
+  --primary-color: #333333;
+  --secondary-color: #fff;
+
+  --form-color: #808080;
+  --titlle-hero-color: #e9e9e9;
+
+  --bg-color-blog-section: #0284d0;
+  --shadow-btn: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+
+  --primary-bg-color: #fff;
+  --secondary-bg-color: #28a745;
+  --third-bg-color: #f4f4f4;
+
+  --button-active-blue: #0376b8;
+  --button-active-green: #23913d;
+
+  --time: 250ms;
+  --cubic: ease;
 }
 
 /* Стили для обнуления верхних отступов у элементов */
@@ -12,177 +26,296 @@ h1,
 h2,
 h3,
 p {
-    margin-top: 0;
+  margin-top: 0;
 }
 
 /* Класс для обнуления базовых свойств у списков (ul) */
 .list {
-    list-style: none;
-    padding-left: 0;
-    margin: 0;
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
 }
 
 /* Класс для обнуления базовых свойств у ссылок */
 .link {
-    text-decoration: none;
-    color: inherit;
+  text-decoration: none;
+  color: inherit;
 }
 
 /* Свойства для корректного отображения картинок */
 img {
-    display: block;
-    max-width: 100%;
-    height: auto;
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 /* Свойства для обнуления курсива у address */
 address {
-    font-style: normal;
+  font-style: normal;
 }
 
 /* стилі для index.html */
 body {
-    color: var(--text-color);
-    font-family: Open Sans;
-}
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  line-height: 1.56;
 
-/* header */
-.section {
-    margin: auto;
-    padding: 0;
-    width: 1390px;
-    padding: 0 15px 0 15px;
+  color: var(--primary-color);
+
+  background-color: var(--primary-bg-color);
 }
 
 .container {
-    margin-left: auto;
-    margin-right: auto;
-    width: 1360px;
-    padding: 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1390px;
+  padding: 0 15px 0 15px;
 }
 
 ul {
-    margin-top: 0;
-    margin-bottom: 0;
-    list-style: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+/* header */
+.header {
+  width: 100%;
+}
+
+.header-container {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 48px;
+  max-width: 1360px;
+  padding-top: 5px;
+}
+
+.header-nav {
+  display: flex;
+  justify-content: space-between;
 }
 
 .logo {
-    text-decoration: none;
-    display: inline-flex;
-    align-items: center;
-    padding-top: 11px;
+  display: block;
+  font-size: 35px;
+  line-height: calc(42 / 35);
+  padding-top: 11px;
+  padding-bottom: 11px;
+  margin-bottom: 0;
+  display: flex;
+  align-items: center;
+  color: var(--secondary-color);
+  text-decoration: none;
+}
 
-    font-weight: 400;
-    font-size: 35px;
-    line-height: 1.2;
+.logo-icon {
+  display: block;
+  fill: var(--secondary-bg-color);
+  margin-right: 10px;
+}
+
+.logo-span {
+  display: block;
+  color: var(--secondary-bg-color);
+  margin-right: 10px;
+}
+
+.header-list {
+  padding: 0;
+  display: flex;
+  align-items: center;
+  gap: 38px;
+  color: var(--secondary-color);
+  list-style: none;
+  text-decoration: none;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.heder-link {
+  color: var(--secondary-color);
+  text-decoration: none;
+  padding-bottom: 16px;
+  padding-top: 16px;
+  display: block;
+}
+
+.heder-link:hover,
+.heder-link:focus {
+  color: var(--button-active-green);
 }
 
 /* Hero */
-
-/* Benefits */
-.visually-hidden {
-    position: absolute;
-    white-space: nowrap;
-    width: 1px;
-    height: 1px;
-    overflow: hidden;
-    border: 0;
-    padding: 0;
-    clip: rect(0 0 0 0);
-    clip-path: inset(50%);
-    margin: -1px;
+.ovarlay {
+  max-width: 1360px;
+  height: 768px;
+  margin-right: auto;
+  margin-left: auto;
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0.4)
+    ),
+    url("../images/city.jpg");
+  background-color: var(--primary-color);
+  background-position: center;
+  background-size: cover;
 }
 
-.benefits {
-    display: flex;
-    padding: 0 66px;
+.hero {
+  text-align: center;
+}
 
-    justify-content: space-between;
+.hero-container {
+  padding-top: 210px;
+  padding-bottom: 284px;
+}
+
+.hero-titlle {
+  margin-bottom: 25px;
+  margin-top: 0;
+  color: var(--titlle-hero-color);
+  font-weight: 300;
+  font-size: 55px;
+  line-height: 1.2;
+}
+
+.hero-descr {
+  margin-top: 0;
+  margin-bottom: 29px;
+  color: var(--titlle-hero-color);
+  font-size: 22px;
+  line-height: 1.68;
+}
+
+.hero-button {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  margin: 0 auto;
+  padding: 10px 30px 9px 41px;
+  min-width: 92px;
+  text-align: center;
+  border: transparent;
+  border-radius: 5px;
+  cursor: pointer;
+  color: var(--secondary-color);
+  fill: currentColor;
+  background-color: var(--secondary-bg-color);
+  font-family: inherit;
+  line-height: 1.56;
+}
+
+.hero-button:hover,
+.hero-button:focus {
+  background-color: var(--button-active-green);
+  box-shadow: var(--shadow-btn);
+}
+
+/* Benefits */
+
+.benefits {
+  display: flex;
+  padding: 0 66px;
+
+  justify-content: space-between;
 }
 
 .benefits-item {
-    display: block;
-    width: 362px;
-    text-align: center;
+  display: block;
+  width: 362px;
+  text-align: center;
 }
 
 .benefits-icon {
-    display: inline-flex;
-    margin-top: 40px;
-    margin-bottom: 15px;
-    width: 67px;
-    height: 67px;
+  display: inline-flex;
+  margin-top: 40px;
+  margin-bottom: 15px;
+  width: 67px;
+  height: 67px;
 
-    background-color: var(--brand-color);
-    border-radius: 50%;
-    align-items: center;
-    justify-content: center;
-    fill: var(--white-color);
+  background-color: var(--secondary-bg-color);
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  fill: var(--secondary-color);
 }
 
 .lead {
-    margin-bottom: 16px;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 1.65;
+  margin-bottom: 16px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.65;
 }
 
 .text {
-    margin-bottom: 19px;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 1.56;
+  margin-bottom: 19px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.56;
 }
 
 /* Переваги */
 
 .solutions {
-    display: flex;
+  display: flex;
 }
 
 .solutions-desk {
-    padding: 84px 44px 84px 30px;
+  padding: 84px 44px 84px 30px;
 
-    background-color: var(--brand-color);
-    color: var(--white-color);
+  background-color: var(--secondary-bg-color);
+  color: var(--secondary-color);
 }
 
 .section-title {
-    margin-bottom: 5px;
+  margin-bottom: 5px;
 
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 1.65;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.65;
 }
 
 .solutions-subtitle {
-    margin-bottom: 26px;
+  margin-bottom: 26px;
 
-    font-weight: 300;
-    font-size: 38px;
-    line-height: 1.26;
+  font-weight: 300;
+  font-size: 38px;
+  line-height: 1.26;
 }
 
 .solutions-text {
-    margin-bottom: 17px;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 1.56;
+  margin-bottom: 17px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.56;
 }
 
 .button {
-    display: block;
-    min-width: 167px;
-    padding: 12px 0;
+  display: block;
+  min-width: 167px;
+  padding: 12px 0;
 
-    border: 1px solid var(--white-color);
-    border-radius: 5px;
+  border: 1px solid var(--secondary-color);
+  border-radius: 5px;
 
-    background-color: var(--brand-color);
-    color: var(--white-color);
+  background-color: var(--secondary-bg-color);
+  color: var(--secondary-color);
 
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 1.56;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.56;
 }

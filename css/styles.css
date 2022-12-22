@@ -410,9 +410,10 @@ ul {
 }
 
 .callback-box {
-  flex-grow: 1;
-  flex-shrink: 0;
-  padding: 20px 30px;
+  width: 100%;
+  /*   flex-grow: 1;
+  flex-shrink: 0; */
+  padding: 70px 30px 82px 30px;
 }
 
 .form-input {
@@ -441,6 +442,14 @@ ul {
 
 .form-input:nth-child(2) {
   margin-bottom: 60px;
+}
+
+.callback-title {
+  font-weight: 300;
+  font-size: 38px;
+  line-height: 1.263;
+  margin-bottom: 34px;
+  color: var(--primary-color);
 }
 
 .form-btn {

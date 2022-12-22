@@ -41,25 +41,21 @@ address {
 }
 
 /* стилі для index.html */
-body {
-    color: var(--text-color);
-    font-family: Open Sans;
-}
 
 /* header */
-.section {
+/* .section {
     margin: auto;
     padding: 0;
     width: 1390px;
     padding: 0 15px 0 15px;
-}
+} */
 
-.container {
+/* .container {
     margin-left: auto;
     margin-right: auto;
     width: 1360px;
     padding: 0;
-}
+} */
 
 ul {
     margin-top: 0;
@@ -67,7 +63,7 @@ ul {
     list-style: none;
 }
 
-.logo {
+/* .logo {
     text-decoration: none;
     display: inline-flex;
     align-items: center;
@@ -76,12 +72,12 @@ ul {
     font-weight: 400;
     font-size: 35px;
     line-height: 1.2;
-}
+} */
 
 /* Hero */
 
 /* Benefits */
-.visually-hidden {
+/* .visually-hidden {
     position: absolute;
     white-space: nowrap;
     width: 1px;
@@ -92,7 +88,7 @@ ul {
     clip: rect(0 0 0 0);
     clip-path: inset(50%);
     margin: -1px;
-}
+} */
 
 .benefits {
     display: flex;
@@ -189,27 +185,27 @@ ul {
 
 /* секції 5, 6 */
 
-h1,
+/* h1,
 h2,
 h3,
 p,
 ul {
   margin: 0;
   padding: 0;
-}
+} */
 
-body {
+/* body {
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
   font-family: 'Open Sans', sans-serif;
   color: #333333;
-}
+} */
 
-.img {
+/* .img {
   padding: 0;
   display: block;
-}
+} */
 
 .list {
   display: flex;
@@ -217,13 +213,13 @@ body {
   text-decoration: none;
 }
 
-.container {
+/* .container {
   display: flex;
   justify-content: center;
   margin: auto;
   padding: 0 15px;
   width: 1360px;
-}
+} */
 
 .cases {
   padding: 50px 0 47px;
@@ -263,6 +259,11 @@ body {
   line-height: 1.65;
   color: #ffffff;
   margin-bottom: 5px;
+}
+
+.container-article {
+  display: flex;
+  justify-content: center;
 }
 
 .post__content {

@@ -409,8 +409,9 @@ ul {
 }
 
 .worker-container {
-  padding-left: 30px;
-  padding-right: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1330px;
 }
 
 .section-title {

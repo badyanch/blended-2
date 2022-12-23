@@ -401,6 +401,97 @@ ul {
   max-width: 665px;
 }
 
+/*Наша команда */
+
+.worker-section {
+  padding-top: 49px;
+  padding-bottom: 59px;
+}
+
+.worker-container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1330px;
+}
+
+.section-title {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 38px;
+  line-height: 1.2;
+  text-align: center;
+  margin-bottom: 34px;
+}
+
+.small-title {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.65;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+.pd {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  text-align: center;
+  margin-bottom: 45px;
+  padding: 0;
+}
+
+.worker {
+  display: flex;
+  gap: 15px;
+}
+
+.worker .item-work+.item-work {
+  margin-left: 19px;
+}
+
+.value {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.5;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.title {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 32px;
+  text-align: center;
+  margin-top: 13px;
+  margin-bottom: 12px;
+}
+
+.icons-list {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+}
+
+.icons-list .item {
+  width: 35px;
+  height: 35px;
+}
+
+.social-icons {
+  fill: #FFFFFF;
+}
+
+.team-item:not(:last-child) {
+  margin-right: 25px;
+}
+
+
 .callback-container {
   width: 1330px;
   display: flex;
@@ -470,4 +561,49 @@ ul {
 .form-btn:focus {
   box-shadow: var(--shadow-btn);
   background-color: var(--button-active-green);
+}
+
+/* Футер */
+
+.foot {
+  background-color: #333333;
+  padding: 20px 16px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1330px;
+ 
+    
+}
+
+.icon-list {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  margin-bottom: 10px;
+  padding: 0;
+}
+
+.footer-item:not(:last-child) {
+  margin-right: 25px;
+}
+
+.icon-list .item {
+  width: 35px;
+  height: 35px;
+
+}
+
+.pf {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.social-links {
+  display: flex;
+  align-items: center;
+  height: 100%;
 }

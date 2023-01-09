@@ -409,9 +409,11 @@ ul {
 }
 
 .worker-container {
+  padding-left: 30px;
+  padding-right: 30px;
+  width: 1330px;
   margin-left: auto;
   margin-right: auto;
-  width: 1330px;
 }
 
 .section-title {
@@ -471,17 +473,31 @@ ul {
   margin-top: 13px;
   margin-bottom: 12px;
 }
+.team-item{
+  position: relative;
+}
+.item-work{
+  position: relative;
+}
 
 .icons-list {
   display: flex;
   justify-content: center;
-  padding: 0;
+  width: 100%;
+  position: absolute;
+  top: 130px;
+  opacity: 0;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.person:hover ~ .icons-list,
+.icons-list:hover{
+  opacity: 1;
 }
 
-.icons-list .item {
+/*.icons-list .item {
   width: 35px;
   height: 35px;
-}
+}*/
 
 .social-icons {
   fill: #FFFFFF;
